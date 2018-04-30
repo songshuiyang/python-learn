@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+'''
+    拉勾网抓取职位信息
+'''
 import requests
 from openpyxl import Workbook
 
@@ -26,7 +31,8 @@ def get_json(url, page, lang_name):
 
 
 def main():
-    lang_name = input('职位名：')
+    # lang_name = input('职位名：')
+    lang_name = 'java'
     page = 1
     url = 'http://www.lagou.com/jobs/positionAjax.json?needAddtionalResult=false'
     info_result = []
